@@ -2,7 +2,7 @@ FROM centos
 MAINTAINER PromptWorks <team@promptworks.com>
 
 RUN export RUBY_INSTALL_VERSION=0.4.0 && \
-    export RUBY_VERSION=2.0.0-p353 && \
+    export RUBY_VERSION=2.0.0-p451 && \
     cd /tmp && \
     yum list installed | cut -f 1 -d " " | uniq | sort > /tmp/pre && \
     yum install git -y && \
